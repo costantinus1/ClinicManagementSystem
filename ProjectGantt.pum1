@@ -1,0 +1,66 @@
+@startgantt
+title Clinic Management System - Project Timeline
+printscale weekly
+
+' --- CLEAN MODERN STYLE ---
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam ArrowColor #888888
+
+-- 1. Planning --
+[Proposal and UI] lasts 2 weeks
+[Proposal and UI] is 100% completed
+
+[Study MRI and CT Questionnaires] lasts 1 week
+[Study MRI and CT Questionnaires] starts at [Proposal and UI]'s end
+[Study MRI and CT Questionnaires] is 100% completed
+
+-- 2. Java App (Kostantinos) --
+[Build Java Swing UI Screens] lasts 3 weeks
+[Build Java Swing UI Screens] starts at [Study MRI and CT Questionnaires]'s end
+[Build Java Swing UI Screens] is 10% completed
+
+[Program Red/Green Warning Logic] lasts 2 weeks
+[Program Red/Green Warning Logic] starts at [Build Java Swing UI Screens]'s end
+
+[Milestone(Achievement): App Frontend is Ready] happens at [Program Red/Green Warning Logic]'s end
+
+-- 3. Database (Panagiotis) --
+[Create MySQL Tables] lasts 2 weeks
+[Create MySQL Tables] starts at [Study MRI and CT Questionnaires]'s end
+
+[Insert Sample Patient Data] lasts 2 weeks
+[Insert Sample Patient Data] starts at [Create MySQL Tables]'s end
+
+-- 4. Connecting Everything --
+[Link Java App to Database (JDBC)] lasts 2 weeks
+[Link Java App to Database (JDBC)] starts at [Program Red/Green Warning Logic]'s end
+[Link Java App to Database (JDBC)] starts at [Insert Sample Patient Data]'s end
+
+-- 5. Final Steps --
+[Test System and Fix Bugs (Paraskevas)] lasts 1 week
+[Test System and Fix Bugs (Paraskevas)] starts at [Link Java App to Database (JDBC)]'s end
+
+[Write WRIT1 Report] lasts 1 week
+[Write WRIT1 Report] starts at [Test System and Fix Bugs (Paraskevas)]'s end
+
+-- 6. Group Presentation (PRES1) --
+[Draft PRES1 Script and Slides] lasts 1 week
+[Draft PRES1 Script and Slides] starts at [Test System and Fix Bugs (Paraskevas)]'s end
+
+[Team Rehearsal and Final Delivery] lasts 1 week
+[Team Rehearsal and Final Delivery] starts at [Draft PRES1 Script and Slides]'s end
+
+-- Colors --
+[Proposal and UI] is colored in #A9DFBF
+[Study MRI and CT Questionnaires] is colored in #A9DFBF
+[Build Java Swing UI Screens] is colored in #AED6F1
+[Program Red/Green Warning Logic] is colored in #AED6F1
+[Create MySQL Tables] is colored in #D7BDE2
+[Insert Sample Patient Data] is colored in #D7BDE2
+[Link Java App to Database (JDBC)] is colored in #AED6F1
+[Test System and Fix Bugs (Paraskevas)] is colored in #F9E79F
+[Write WRIT1 Report] is colored in #F5B041
+[Draft PRES1 Script and Slides] is colored in #F1948A
+[Team Rehearsal and Final Delivery] is colored in #E74C3C
+@endgantt
