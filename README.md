@@ -1,8 +1,8 @@
 
-             # Clinic Management System v2.0
- # Clinic Management System v2.0
+            
+ # 🛡️ SafeScan V2: Student Project IST5001
 
-====SafeScan V2.0===
+
 🏥 Project Overview
 
 The Clinic Management System is a specialized Java Swing application designed for medical environments. It features a high-contrast "Clinical Dark Mode" UI and a robust safety screening logic to determine patient eligibility for MRI procedures.
